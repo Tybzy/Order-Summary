@@ -49,7 +49,7 @@ main{
 .pay a{
     font-weight: bolder;
     font-size: 16px;
-    color: purple;
+    color: hsl(245, 175%, 52%);
 }
 .amount{
     margin-right: 80px;
@@ -78,12 +78,11 @@ button{
     cursor: pointer;
 }
 .pay-button{
-    background-color: purple;
+    background-color: hsl(245, 175%, 52%);
     color: white;
     text-align: center;
     padding: 20px;
     border-radius: 14px;
-    box-shadow: 0 10px 25px -10px rgb(52, 51, 51);
     margin-bottom: 25px;
 }
 .cancel{
@@ -104,19 +103,26 @@ button{
         background-image:url(./images/pattern-background-mobile.svg) ;
         background-repeat: no-repeat;
         background-size: contain;
+        font-weight: bold;
     }
     .pay{
         height: 90%;
         width: 90%;
-        background-color: #ffffff;
+        background-color: rgb(235, 221, 235);
         border-radius: 16px;
-       
+        padding: 15px;
     
     }
-    .pay div>h4{
-        width:fit-content
+    .pay img{
+        margin-right: 10px;
+        margin-left: 10px;
     }
     .pay a{
         margin-right: 20px;
+    }
+    .pay-button{
+        width: 90%;
+        margin-right: 17px;
+        margin-left: 17px;
     }
 }
