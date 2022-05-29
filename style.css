@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Red Hat Display';
+    line-height:1.2rem;
+    background-color: rgb(220, 207, 222);
+}
+main{
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border-radius: 24px 24px 24px 24px;
+    background-color: #ffffff;
+    height: auto;
+
+}
+.text-container{
+    text-align: center;
+    padding: 15px;
+}
+.text-container h2{
+    font-size: 36px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.text-container h4{
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.pay{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(235, 221, 235);
+    width: 80%;
+    border-radius: 14px;
+    align-items: center;
+    padding: 15px;
+}
+.pay a{
+    font-weight: bolder;
+    font-size: 16px;
+    color: purple;
+}
+.amount{
+    margin-right: 80px;
+}
+.amount h4{
+    font-weight: bolder;
+    font-size: 16px;
+}
+.amount p{
+    font-size: 16px;
+}
+.image-container img{
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    display: block;
+}
+button{
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    margin-left: 40px;  
+    text-align: center;
+    font-weight: bolder;
+}
+.button :hover{
+    cursor: pointer;
+}
+.pay-button{
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px -10px rgb(52, 51, 51);
+    margin-bottom: 25px;
+}
+.cancel{
+    border: none;
+    background: white;
+    margin-bottom: 20px;
+}
+.attribution{
+    display: flex;
+    align-self: flex-end;
+    text-align: center;
+    font-size: 12px;
+}
+
+@media(min-width: 300px) and (max-width: 600px){
+    body{
+        background-color: hsl(225, 100%, 94%);
+        background-image:url(./images/pattern-background-mobile.svg) ;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .pay{
+        height: 90%;
+        width: 90%;
+        background-color: #ffffff;
+        border-radius: 16px;
+       
+    
+    }
+    .pay div>h4{
+        width:fit-content
+    }
+    .pay a{
+        margin-right: 20px;
+    }
+}
